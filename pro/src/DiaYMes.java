@@ -7,11 +7,14 @@ public class DiaYMes {
         int mes=sc.nextInt();
         System.out.println("introduce el dia");
         int dia=sc.nextInt();
+        fechaCorrecta(dia,mes);
+    }
+    public static void fechaCorrecta(int dia, int mes){
         boolean fechaCorrecta=false;
         if ((dia<1 || dia>31)&& (mes<1 || mes>12)){
-        fechaCorrecta=false;
+            fechaCorrecta=false;
         }
-       else if (mes==2 && dia>28){
+        else if (mes==2 && dia>28){
             fechaCorrecta=false;
         }
         else if ((mes==4||mes==6|| mes==9||mes==11) && dia>30){
@@ -27,5 +30,6 @@ public class DiaYMes {
         else {
             System.out.println("la fecha es incorrecta");
         }
+
     }
 }

@@ -9,6 +9,9 @@ public class Digitos {
         int num = sc.nextInt();
         num = Math.abs(num);
         int digitos = 0;
+      numeroDigitos(digitos,num);
+    }
+    public static void numeroDigitos (int digitos,int num){
         if (num < 10) {
             digitos = 1;
         }

@@ -7,8 +7,11 @@ public class año {
         int aniodenacimiento=sc.nextInt();
         System.out.println("introduce año actual");
         int anioactual=2022;
-        int edad;
-        edad=anioactual-aniodenacimiento;
+       anio(aniodenacimiento, anioactual);
+    }
+    public static void anio(int aniodenacimiento, int anioactual){
+
+       int edad=anioactual-aniodenacimiento;
         System.out.println("esta es tu edad " + edad +" años ");
     }
 }

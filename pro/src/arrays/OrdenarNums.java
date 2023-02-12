@@ -1,18 +1,23 @@
+package arrays;
+
 import java.util.Scanner;
 
-public class Comparar3 {
+public class OrdenarNums {
     public static void main(String[] args) {
+        //recibir 3 x teclado
         Scanner sc = new Scanner(System.in);
-        //Pedir tres números y ordenarlos de mayor a menor
-        System.out.println("introduce 3 numeros");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-        int num3 = sc.nextInt();
-
-        ordenar(num1, num2, num3);
+        int num[] = new int[3];
+        num[0] = sc.nextInt();
+        num[1] = sc.nextInt();
+        num[2] = sc.nextInt();
+ordenar(num);
     }
 
-    public static void ordenar(int num1, int num2, int num3) {
+    public static void ordenar(int[] enteros) {
+        int num1=enteros[0];
+        int num2=enteros[1];
+        int num3=enteros[2];
+
         if (num1 > num2 && num2 > num3) {
             System.out.println(num1 + "," + num2 + "," + num3);
         } else if (num2 > num1 && num1 > num3) {
